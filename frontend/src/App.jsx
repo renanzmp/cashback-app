@@ -11,7 +11,7 @@ function App() {
   const [atualizarLista, setAtualizarLista] = useState(0);
 
   // URL centralizada para facilitar a troca para a nuvem
-  const API_URL = 'http://127.0.0.1:5000';
+  const API_URL = 'https://cashback-app-w1pi.onrender.com';
 
   useEffect(() => {
     const carregarHistorico = async () => {
