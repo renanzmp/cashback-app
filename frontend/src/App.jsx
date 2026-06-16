@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>Cashback Fintech</h1>
+        <h1>Simulador de Cashback</h1>
         <p>Simule seu retorno financeiro com precisão.</p>
       </header>
 
