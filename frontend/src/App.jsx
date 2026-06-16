@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './App.css'; // Lembre-se de colar aquele CSS de Fintech aqui depois!
+import './App.css';
 
 function App() {
   const [valor, setValor] = useState('');
@@ -10,7 +10,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [atualizarLista, setAtualizarLista] = useState(0);
 
-  // URL centralizada para facilitar a troca para a nuvem
   const API_URL = 'https://cashback-app-w1pi.onrender.com';
 
   useEffect(() => {

@@ -4,17 +4,17 @@ from models import db, Historico
 cashback_bp = Blueprint('cashback', __name__)
 
 def calcular_cashback(valor_original, desconto_percentual, is_vip):
-    # 1. Aplica o desconto do cupom
+    #Aplica o desconto do cupom
     valor_final = valor_original * (1 - (desconto_percentual / 100))
     
-    # 2. Calcula base de 5% sobre o valor final
+    #Calcula base de 5% sobre o valor final
     cashback = valor_final * 0.05
     
-    # 3. Adiciona bônus de 10% em cima da base para VIPs
+    #Adiciona bônus de 10% em cima da base para VIPs
     if is_vip:
         cashback += (cashback * 0.10)
         
-    # 4. Dobra o cashback se a compra final ultrapassar R$ 500
+    #Dobra o cashback se a compra final ultrapassar R$ 500
     if valor_final > 500:
         cashback *= 2
         
